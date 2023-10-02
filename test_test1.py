@@ -14,6 +14,6 @@ from FunctionalDef import ProgonBank
         ('Hello World!', 'Hello World!') #Тест должен пройти
     ]
 )
-def test_one_login(result, test, ProgonBank):
-    assert str(result) in ProgonBank.text
-    assert str(test) in ProgonBank.text
+def test_one_login(result, test, progon_bank):
+    assert str(result) in progon_bank.text
+    assert str(test) in progon_bank.text

@@ -6,9 +6,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from modelmy import LocatorVariable
 
 @pytest.fixture
-def ProgonBank(driver):
-    driver.get(LocatorVariable.navigate)
-    driver.find_element(By.ID, LocatorVariable.Login_button).click()
-    driver.find_element(By.ID, LocatorVariable.Approve).click()
-    crypto = driver.find_element(By.ID, LocatorVariable.HelloWorld)
+def progon_bank(driver):
+    driver.get(LocatorVariable.NAVIGATE)
+    driver.find_element(LocatorVariable.LOGIN_BUTTON).click()
+    driver.find_element(LocatorVariable.APPROVE).click()
+    crypto = driver.find_element(LocatorVariable.HELLO_WORLD)
     return crypto

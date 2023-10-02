@@ -1,5 +1,5 @@
 class LocatorVariable:
-    navigate = 'https://idemo.bspb.ru/'
-    Login_button = 'login-button'
-    Approve = 'login-otp-button'
-    HelloWorld = 'user-greeting'
+    NAVIGATE = 'https://idemo.bspb.ru/'
+    LOGIN_BUTTON = (By.ID, 'login-button')
+    APPROVE = (By.ID, 'login-otp-button')
+    HELLO_WORLD = (By.ID, 'user-greeting')
